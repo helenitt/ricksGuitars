@@ -7,7 +7,7 @@ public class FindGuitarTester {
 
     Guitar whatErinLikes = new Guitar("", 0, Builder.FENDER, "Stratocastor",
                                       Type.ELECTRIC, Wood.ALDER, Wood.ALDER);
-    Guitar guitar = inventory.search(whatErinLikes);
+    Guitar guitar = (Guitar) inventory.search(whatErinLikes);
     if (guitar != null) {
       System.out.println("Erin, you might like this " +
         guitar.getBuilder() + " " + guitar.getModel() +  " " +
